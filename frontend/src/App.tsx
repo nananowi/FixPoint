@@ -28,7 +28,7 @@ function App() {
   const [activePage, setActivePage] = useState('home')
 
   // Временные статусы заявок
-  // Потом это заменим на данные с backend
+  // Потом это заменю на данные с backend
   const [applicationStatuses, setApplicationStatuses] =
     useState<Record<number, string>>({})
 
