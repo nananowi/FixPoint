@@ -1,12 +1,12 @@
 /* главная страница чпонькспоинт */
 
 .fp-home {
-    --fp-bg: #101110;
-    --fp-panel: #191b19;
-    --fp-text: #154689;
-    --fp-muted: #999d96;
-    --fp-orange: #d9ff62;
-    --fp-line: rgba(255, 255, 255, 0.12);
+    --fp-bg: #f3f7fc;
+    --fp-panel: #ffffff;
+    --fp-text: #172b4d;
+    --fp-muted: #667892;
+    --fp-orange: #2563eb;
+    --fp-line: #dbe5f1;
 
     min-height: 100vh;
     background: var(--fp-bg);
@@ -53,7 +53,7 @@
   height: 43px;
   border-radius: 12px;
   background: var(--fp-orange);
-  color: #11130c;
+  color: #ffffff;
   font-size: 25px;
   font-weight: 900;
 }
@@ -89,7 +89,7 @@
 }
 
 .fp-nav a {
-  color: #c4c6c0;
+  color: #526782;
 }
 
 .fp-nav a:hover,
@@ -153,7 +153,7 @@
   height: 7px;
   border-radius: 50%;
   background: var(--fp-orange);
-  box-shadow: 0 0 12px rgba(217, 255, 98, 0.5);
+  box-shadow: 0 0 12px rgba(37, 99, 235, 0.25);
 }
 
 .fp-hero h1 {
@@ -170,7 +170,7 @@
 
 .fp-hero-description {
   max-width: 450px;
-  color: #a9aca5;
+  color: #5d708b;
   font-size: 15px;
   line-height: 1.9;
 }
@@ -198,11 +198,11 @@
 
 .fp-primary-button {
   background: var(--fp-orange);
-  color: #14160e !important;
+  color: #ffffff !important;
 }
 
 .fp-primary-button:hover {
-  background: #e5ff98;
+  background: #1d4ed8;
   transform: translateY(-2px);
 }
 
@@ -212,7 +212,7 @@
 }
 
 .fp-secondary-button:hover {
-  background: rgba(255, 255, 255, 0.06);
+  background: #edf4ff;
 }
 
 .fp-trust-row {
@@ -253,7 +253,7 @@
   position: absolute;
   width: min(100%, 420px);
   aspect-ratio: 1;
-  border: 1px solid rgba(217, 255, 98, 0.13);
+  border: 1px solid rgba(37, 99, 235, 0.10);
   border-radius: 50%;
   z-index: -1;
 }
@@ -267,10 +267,10 @@
 .fp-device {
   width: min(72%, 290px);
   padding: 10px;
-  background: linear-gradient(140deg, #565b50, #1a1d19 35%, #30352b);
-  border: 1px solid #6c7164;
+  background: linear-gradient(140deg, #f8fbff, #e6eef9 35%, #ffffff);
+  border: 1px solid #c7d5e8;
   border-radius: 18px;
-  box-shadow: 0 35px 90px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 35px 90px rgba(32, 63, 107, 0.12);
   transform: rotate(-5deg);
 }
 
@@ -284,7 +284,7 @@
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background: #777b70;
+  background: #8092ab;
 }
 
 .fp-device-screen {
@@ -294,15 +294,15 @@
   overflow: hidden;
   border-radius: 9px;
   background:
-    linear-gradient(rgba(217, 255, 98, 0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(217, 255, 98, 0.035) 1px, transparent 1px),
-    #12160f;
+    linear-gradient(rgba(37, 99, 235, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37, 99, 235, 0.035) 1px, transparent 1px),
+    #f8fbff;
   background-size: 20px 20px;
-  border: 1px solid rgba(217, 255, 98, 0.22);
+  border: 1px solid rgba(37, 99, 235, 0.20);
 }
 
 .fp-screen-label {
-  color: #a7b18c;
+  color: #59708e;
   font-size: 8px;
   letter-spacing: 1.4px;
 }
@@ -313,30 +313,30 @@
   width: 100px;
   height: 100px;
   margin: 22px auto 20px;
-  border: 1px solid rgba(217, 255, 98, 0.55);
+  border: 1px solid rgba(37, 99, 235, 0.55);
   border-radius: 50%;
   color: var(--fp-orange);
   font-size: 65px;
   font-weight: 200;
-  box-shadow: 0 0 40px rgba(217, 255, 98, 0.07);
+  box-shadow: 0 0 40px rgba(37, 99, 235, 0.08);
 }
 
 .fp-screen-line {
   height: 3px;
   margin-top: 9px;
-  background: rgba(217, 255, 98, 0.6);
+  background: rgba(37, 99, 235, 0.35);
 }
 
 .fp-screen-line.short {
   width: 58%;
-  background: rgba(217, 255, 98, 0.2);
+  background: rgba(37, 99, 235, 0.18);
 }
 
 .fp-screen-footer {
   display: flex;
   justify-content: space-between;
   margin-top: 18px;
-  color: #a7b18c;
+  color: #59708e;
   font-size: 8px;
   letter-spacing: 1px;
 }
@@ -345,7 +345,7 @@
   display: flex;
   justify-content: space-between;
   padding: 10px 4px 2px;
-  color: #b2b7a8;
+  color: #667892;
   font-size: 8px;
   letter-spacing: 1px;
 }
@@ -356,10 +356,10 @@
   align-items: center;
   gap: 11px;
   padding: 13px 15px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(37, 99, 235, 0.16);
   border-radius: 10px;
-  background: rgba(29, 32, 27, 0.94);
-  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 15px 45px rgba(32, 63, 107, 0.12);
   backdrop-filter: blur(10px);
 }
 
@@ -379,14 +379,14 @@
   width: 32px;
   height: 32px;
   border-radius: 8px;
-  background: rgba(217, 255, 98, 0.13);
+  background: rgba(37, 99, 235, 0.10);
   color: var(--fp-orange);
   font-size: 19px;
 }
 
 .fp-card-icon-orange {
-  background: rgba(255, 169, 92, 0.13);
-  color: #ffb574;
+  background: rgba(14, 165, 233, 0.12);
+  color: #0284c7;
 }
 
 .fp-floating-card strong,
@@ -408,7 +408,7 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  color: #777b70;
+  color: #8092ab;
   font-size: 9px;
   letter-spacing: 2px;
 }
@@ -456,17 +456,17 @@
   padding: 25px;
   border: 1px solid var(--fp-line);
   border-radius: 12px;
-  background: linear-gradient(145deg, #1b1e19, #141613);
+  background: linear-gradient(145deg, #ffffff, #f7faff);
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
 .fp-service-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(217, 255, 98, 0.45);
+  border-color: rgba(37, 99, 235, 0.45);
 }
 
 .fp-service-number {
-  color: #858a7e;
+  color: #71839c;
   font-size: 9px;
   letter-spacing: 1.4px;
 }
@@ -493,14 +493,14 @@
   position: absolute;
   top: 22px;
   right: 22px;
-  color: #777b70;
+  color: #8092ab;
 }
 
 /* Этапы ремонта */
 
 .fp-process {
   padding: 85px 8%;
-  background: #191b18;
+  background: #eaf2fb;
   border-top: 1px solid var(--fp-line);
   border-bottom: 1px solid var(--fp-line);
 }
@@ -525,7 +525,7 @@
 
 .fp-process-step {
   padding-top: 20px;
-  border-top: 1px solid rgba(217, 255, 98, 0.4);
+  border-top: 1px solid rgba(37, 99, 235, 0.35);
 }
 
 .fp-process-step > span {
@@ -553,11 +553,11 @@
   gap: 40px;
   margin: 70px 8%;
   padding: 42px;
-  border: 1px solid rgba(217, 255, 98, 0.22);
+  border: 1px solid rgba(37, 99, 235, 0.20);
   border-radius: 14px;
   background:
-    radial-gradient(ellipse at 100% 0%, rgba(217, 255, 98, 0.08), transparent 55%),
-    #171a15;
+    radial-gradient(ellipse at 100% 0%, rgba(37, 99, 235, 0.08), transparent 55%),
+    #ffffff;
 }
 
 .fp-contact h2 {
@@ -582,7 +582,7 @@
 
 .fp-contact-actions small {
   max-width: 230px;
-  color: #858a7e;
+  color: #71839c;
   font-size: 10px;
   line-height: 1.7;
 }
@@ -597,7 +597,7 @@
 }
 
 .fp-footer > span {
-  color: #858a7e;
+  color: #71839c;
   font-size: 10px;
   text-align: center;
 }
@@ -606,7 +606,7 @@
   padding: 8px 0;
   border: 0;
   background: transparent;
-  color: #c4c6c0;
+  color: #526782;
   white-space: nowrap;
 }
 
@@ -764,4 +764,108 @@
     transition: none !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* Дополнительные настройки светлой сине-голубой темы */
+.fp-home {
+    background:
+        radial-gradient(ellipse at 85% 8%, rgba(96, 165, 250, 0.10), transparent 32%),
+        var(--fp-bg);
+}
+
+.fp-header,
+.fp-footer {
+    background: rgba(255, 255, 255, 0.82);
+}
+
+.fp-logo-icon {
+    background: #2563eb;
+    color: #ffffff;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.20);
+}
+
+.fp-nav a:hover,
+.fp-footer-employee:hover {
+    color: #2563eb;
+}
+
+.fp-employee-button:hover,
+.fp-secondary-button:hover {
+    background: #edf4ff;
+    border-color: #93b4f4;
+}
+
+.fp-primary-button:hover {
+    background: #1d4ed8;
+}
+
+.fp-hero {
+    background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(239,246,255,0.45));
+}
+
+.fp-device {
+    box-shadow: 0 28px 70px rgba(32, 63, 107, 0.18);
+}
+
+.fp-device-screen {
+    background:
+        linear-gradient(rgba(37, 99, 235, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(37, 99, 235, 0.045) 1px, transparent 1px),
+        #f8fbff;
+    border-color: #d4e2f5;
+}
+
+.fp-screen-symbol {
+    color: #2563eb;
+    border-color: rgba(37, 99, 235, 0.35);
+    box-shadow: 0 0 35px rgba(37, 99, 235, 0.08);
+}
+
+.fp-screen-line {
+    background: rgba(37, 99, 235, 0.45);
+}
+
+.fp-screen-line.short {
+    background: rgba(37, 99, 235, 0.16);
+}
+
+.fp-floating-card {
+    background: rgba(255, 255, 255, 0.96);
+    border-color: #dbe5f1;
+    box-shadow: 0 15px 45px rgba(32, 63, 107, 0.13);
+}
+
+.fp-card-icon {
+    background: #eaf2ff;
+    color: #2563eb;
+}
+
+.fp-service-card {
+    background: linear-gradient(145deg, #ffffff, #f8fbff);
+    box-shadow: 0 8px 24px rgba(32, 63, 107, 0.04);
+}
+
+.fp-service-card:hover {
+    border-color: #93b4f4;
+    box-shadow: 0 14px 32px rgba(32, 63, 107, 0.09);
+}
+
+.fp-process {
+    background: linear-gradient(135deg, #eaf2fb, #f5f8fd);
+}
+
+.fp-contact {
+    background:
+        radial-gradient(ellipse at 100% 0%, rgba(96, 165, 250, 0.14), transparent 55%),
+        #ffffff;
+    box-shadow: 0 12px 36px rgba(32, 63, 107, 0.06);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .fp-home *,
+    .fp-home *::before,
+    .fp-home *::after {
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
 }

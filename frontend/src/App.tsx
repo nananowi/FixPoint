@@ -60,6 +60,19 @@ function App() {
   // кнопка выход из акка сотрудника
   // =========================
 
+  
+  const getRoleName = (role: string) => {
+    const roleNames: Record<string, string> = {
+      engineer: 'Инженер',
+      repairer: 'Мастер',
+      operator: 'Оператор',
+      admin: 'Администратор',
+      worker: 'Сотрудник',
+    }
+
+    return roleNames[role] ?? role
+  }
+
   const handleLogout = () => {
     setCurrentUser(null)
     setShowLogin(true) //после выхода показываем форму входа сотруудников
@@ -103,8 +116,8 @@ function App() {
           <aside className="sidebar">
 
             <div className="sidebar-logo">
-              <span>REPAIR</span>
-              <strong>SERVICE</strong>
+              <span>Fix</span>
+              <strong>Point</strong>
             </div>
 
             <nav className="sidebar-nav">
@@ -405,8 +418,8 @@ function App() {
           <aside className="sidebar">
 
             <div className="sidebar-logo">
-              <span>REPAIR</span>
-              <strong>SERVICE</strong>
+              <span>Fix</span>
+              <strong>Point</strong>
             </div>
 
             <nav className="sidebar-nav">
@@ -481,7 +494,7 @@ function App() {
                   </strong>
 
                   <span>
-                    {currentUser.role}
+                    {getRoleName(currentUser.role)}
                   </span>
                 </div>
 
@@ -584,8 +597,8 @@ function App() {
         <aside className="sidebar">
 
           <div className="sidebar-logo">
-            <span>REPAIR</span>
-            <strong>SERVICE</strong>
+            <span>Fix</span>
+            <strong>Point</strong>
           </div>
 
 
@@ -663,7 +676,7 @@ function App() {
                 </strong>
 
                 <span>
-                  {currentUser.role}
+                  {getRoleName(currentUser.role)}
                 </span>
 
               </div>
@@ -828,12 +841,16 @@ function App() {
         <div className="login-content">
 
           <p className="welcome-label">
-            СЕРВИСНЫЙ ЦЕНТР(тут чет поменять забыла что)
+            FIXPOINT / СОТРУДНИКАМ
           </p>
 
           <h1>
             Вход в систему
           </h1>
+
+          <p className="welcome-description">
+            Войдите эбэбэбэ чето написать или не надо хз
+          </p>
 
 
           <div className="form">
@@ -892,7 +909,7 @@ function App() {
                 setError('')
               }}
             >
-              ← Вернуться
+              ← На главную 
             </button>
 
           </div>

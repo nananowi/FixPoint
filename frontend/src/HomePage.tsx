@@ -44,7 +44,7 @@ export default function HomePage({ onEmployeeClick }: HomePageProps) {
             <h1>
               Вернём вашей
               <br />
-              технике <span>жизнь.</span>
+              технике <span>жизнь</span>
             </h1>
 
             <p className="fp-hero-description">
@@ -132,7 +132,7 @@ export default function HomePage({ onEmployeeClick }: HomePageProps) {
           <div className="fp-section-heading">
             <div>
               <div className="fp-section-label">ЧЕМ МЫ ПОМОЖЕМ</div>
-              <h2>Техника заслуживает<br />второго шанса.</h2>
+              <h2>Техника заслуживает<br />второго шанса</h2>
             </div>
             <p>
               От первичной проверки до завершения ремонта —
@@ -179,7 +179,7 @@ export default function HomePage({ onEmployeeClick }: HomePageProps) {
         {/* Этапы работы */}
         <section className="fp-process" id="process">
           <div className="fp-section-label">ПРОСТО И ПРОЗРАЧНО</div>
-          <h2>От проблемы к решению.</h2>
+          <h2>От проблемы к решению</h2>
           <p className="fp-process-intro">
             Вы знаете, что происходит с вашей техникой,
             а мы знаем, какой следующий шаг.
@@ -209,7 +209,7 @@ export default function HomePage({ onEmployeeClick }: HomePageProps) {
           </div>
         </section>
 
-        {/* Контакты — пока демонстрационный блок */}
+        {/* Контакты -пока демонстрационный блок */}
         <section className="fp-contact" id="contacts">
           <div>
             <div className="fp-section-label">МЫ НА СВЯЗИ</div>
@@ -225,8 +225,7 @@ export default function HomePage({ onEmployeeClick }: HomePageProps) {
               Связаться с нами <span>↗</span>
             </a>
             <small>
-              Контактные данные и форма заявки будут добавлены
-              на следующем этапе.
+              тут контакты и форма заявки потом добавлю.
             </small>
           </div>
         </section>
