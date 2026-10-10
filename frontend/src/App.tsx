@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { users, applications } from './mockData'
 import './App.css'
+import HomePage from './HomePage'
 
 function App() {
   // =========================
@@ -56,12 +57,12 @@ function App() {
 
 
   // =========================
-  // ВЫХОД
+  // кнопка выход из акка сотрудника
   // =========================
 
   const handleLogout = () => {
     setCurrentUser(null)
-    setShowLogin(false)
+    setShowLogin(true) //после выхода показываем форму входа сотруудников
     setActivePage('home')
     setSelectedApplication(null)
     setLogin('')
@@ -70,7 +71,7 @@ function App() {
   }
 
 
-  // =========================
+  // =====================
   // если челик зашел
   // =========================
 
@@ -904,39 +905,17 @@ function App() {
 
 
   // =========================
-  // ГЛАВНЫЙ ЭКРАН тут чет поменять
+  // ГЛАВНЫЙ ЭКРАН аа
   // =========================
-
+  // Главная страница для клиентов.
+  // Кнопка сотрудников открывает существующую форму входа.
   return (
-    <main className="welcome">
-
-      <div className="welcome-content">
-
-        <p className="welcome-label">
-          СЕРВИСНЫЙ ЦЕНТР
-        </p>
-
-        <h1>
-          FixPoint
-        </h1>
-
-        <p className="welcome-description">
-          Управление заявками, диагностикой
-          и ремонтом устройств
-        </p>
-
-        <button
-          className="login-button"
-          onClick={() =>
-            setShowLogin(true)
-          }
-        >
-          Войти в систему
-        </button>
-
-      </div>
-
-    </main>
+    <HomePage
+      onEmployeeClick={() => {
+        setShowLogin(true)
+        setError('')
+      }}
+    />
   )
 }
 
